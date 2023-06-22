@@ -19,6 +19,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /home/lainocs/plex
-            git pull
-            docker-compose down
-            docker-compose up -d --build
+            # git pull
+            # docker-compose down
+            # docker-compose up -d --build
