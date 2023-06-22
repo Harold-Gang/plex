@@ -10,7 +10,24 @@ services:
       - TZ=Etc/UTC
       - VERSION=docker
     volumes:
-      - ./library:/config
-      - ./tv:/tv
-      - ./movies:/movies
+      - ./plex:/config
+      - ./downloads/tv:/tv
+      - ./downloads/movies:/movies
+    restart: unless-stopped
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - WEBUI_PORT=8087
+    volumes:
+      - /qbit:/config
+      - /downloads:/downloads
+    ports:
+      - 8087:8087
+      - 6881:6881
+      - 6881:6881/udp
     restart: unless-stopped
