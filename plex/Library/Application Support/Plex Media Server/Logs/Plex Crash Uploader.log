@@ -1,4 +1,0 @@
-Jun 22, 2023 09:15:35.731 [140454776732472] INFO - Crash Uploader - Platform: Linux ServerUUID: 7cbe370a772153f2b3e708d9ae01f671f815c0f7 UserId: julien.cousinalliot@gmail.com Version: 1.32.4.7195-7c8f9d3b6
-Jun 22, 2023 09:15:35.731 [140454776732472] INFO - Pre-processed minidump directory: /config/Library/Application Support/Plex Media Server/Crash Reports/1.32.4.7195-7c8f9d3b6
-Jun 22, 2023 09:15:35.731 [140454776732472] INFO - Post-processed minidump directory: /tmp
-Jun 22, 2023 09:15:35.731 [140454808303624] INFO - Crash Uploader - Processing Complete.

@@ -1,0 +1,6 @@
+sonarr/
+qbit/
+plex/
+downloads/
+
+!plex/.gitkeep

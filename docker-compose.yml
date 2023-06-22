@@ -24,10 +24,24 @@ services:
       - TZ=Etc/UTC
       - WEBUI_PORT=8087
     volumes:
-      - /qbit:/config
-      - /downloads:/downloads
+      - ./qbit:/config
+      - ./downloads:/downloads
     ports:
       - 8087:8087
       - 6881:6881
       - 6881:6881/udp
+    restart: unless-stopped
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./sonarr:/config
+      - ./downloads/tv:/tv #optional
+    ports:
+      - 8989:8989
     restart: unless-stopped
