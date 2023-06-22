@@ -622,3 +622,13 @@ Jun 22, 2023 09:17:52.656 [140187643681592] DEBUG - NetworkInterface: Netlink in
 Jun 22, 2023 09:17:52.656 [140187643681592] DEBUG - Network change.
 Jun 22, 2023 09:17:52.656 [140187643681592] DEBUG - NetworkInterface: Notified of network changed (force=0)
 Jun 22, 2023 09:17:52.657 [140187643681592] DEBUG - Network change notification but nothing changed.
+Jun 22, 2023 09:18:25.540 [140187643681592] DEBUG - NetworkInterface: received Netlink message len=68, type=RTM_NEWLINK, flags=0x0
+Jun 22, 2023 09:18:25.540 [140187643681592] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=2, flags=0x11043, change=0x0
+Jun 22, 2023 09:18:25.540 [140187643681592] DEBUG - Network change.
+Jun 22, 2023 09:18:25.540 [140187643681592] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Jun 22, 2023 09:18:25.540 [140187643681592] DEBUG - Network change notification but nothing changed.
+Jun 22, 2023 09:18:58.612 [140187643681592] DEBUG - NetworkInterface: received Netlink message len=68, type=RTM_NEWLINK, flags=0x0
+Jun 22, 2023 09:18:58.612 [140187643681592] DEBUG - NetworkInterface: Netlink information message family=0, type=1, index=2, flags=0x11043, change=0x0
+Jun 22, 2023 09:18:58.612 [140187643681592] DEBUG - Network change.
+Jun 22, 2023 09:18:58.612 [140187643681592] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Jun 22, 2023 09:18:58.612 [140187643681592] DEBUG - Network change notification but nothing changed.
