@@ -25,7 +25,7 @@ services:
       - WEBUI_PORT=8087
     volumes:
       - ./qbit:/config
-      - ./downloads:/downloads
+      - ./downloads:/downloads #COUCOU, DANS l'UI FAUT Y AJOUTER /tv OU /movies EN FONCTION DE CE QUE TU DOWNLOAD
     ports:
       - 8087:8087
       - 6881:6881
