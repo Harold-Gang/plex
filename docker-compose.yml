@@ -45,3 +45,18 @@ services:
     ports:
       - 8989:8989
     restart: unless-stopped
+
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./bazarr/config:/config
+      - ./downloads/movies:/movies
+      - ./downloads/tv:/tv
+    ports:
+      - 6767:6767
+    restart: unless-stopped
